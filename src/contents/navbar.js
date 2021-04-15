@@ -2,13 +2,6 @@ import classes from "./styles/navbar.module.scss";
 import React from "react";
 
 class Navbar extends React.Component {
-  state = {
-    showSidebar: false,
-  };
-
-  showSidebarHandler = () => {
-    this.setState({ showSidebar: !this.state.showSidebar });
-  };
   render() {
     let navMenu = (
       <div className={classes.NavMenu}>
@@ -16,20 +9,10 @@ class Navbar extends React.Component {
           <a href="/">Home</a>
         </div>
         <div>
-          <a href="/">Project</a>
-        </div>
-        <div>
-          <a href="/">About</a>
-        </div>
-        <div>
-          <a href="/">Contact</a>
+          <a href="/">Dashboard</a>
         </div>
       </div>
     );
-    const toggle = !this.state.showSidebar
-      ? classes.DrawerToggle
-      : classes.CrossToggle;
-
     return (
       <>
         <header>
@@ -46,19 +29,9 @@ class Navbar extends React.Component {
                   <a href="/">Login</a>
                 </button>
               </div>
-              <div className={toggle} onClick={this.showSidebarHandler}>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
             </div>
           </nav>
         </header>
-        {this.state.showSidebar ? (
-          <div className={classes.SideDrawer}>
-            <ul>{navMenu}</ul>
-          </div>
-        ) : null}
       </>
     );
   }
