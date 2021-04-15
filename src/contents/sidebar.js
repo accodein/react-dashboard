@@ -4,8 +4,10 @@ import classes from "./styles/sidebar.module.scss";
 class Sidebar extends Component {
   render() {
     return (
-      <div className={classes.Sidebar}>
-        <h1>Hello</h1>
+      <div className={classes.MainSidebar}>
+        <div className={classes.Sidebar}>
+          <div className={classes.Logo}>Accode Dashboard</div>
+        </div>
       </div>
     );
   }
