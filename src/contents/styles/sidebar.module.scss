@@ -28,6 +28,26 @@
     opacity: 0.7;
 }
 
+.Menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    color: #DDE2FF;
+
+    li{
+        list-style: none;
+
+        span {
+            vertical-align:5%
+        }
+    }
+}
+
 .User {
     position: absolute;
     right: 0;
