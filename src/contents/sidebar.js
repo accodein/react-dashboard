@@ -38,15 +38,14 @@ class Sidebar extends Component {
             </ul>
           </div>
         </div>
-
-        <Switch>
-          <Route path="/overview" component={Overview} />
-          <Route path="/tickets" component={Tickets} />
-        </Switch>
         <div className={classes.User}>
           <p>Blacky</p>
           <img src={Dog} alt="User" />
         </div>
+        <Switch>
+          <Route path="/overview" component={Overview} />
+          <Route path="/tickets" component={Tickets} />
+        </Switch>
       </div>
     );
   }
