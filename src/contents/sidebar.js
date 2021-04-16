@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { Route, Switch, NavLink } from "react-router-dom";
+
 import classes from "./styles/sidebar.module.scss";
 import Dog from "../assets/labrador.jpg";
 import { FaChartPie, FaTicketAlt } from "react-icons/fa";
+import Overview from "./overview";
+import Tickets from "./tickets";
 
 class Sidebar extends Component {
   render() {
@@ -12,17 +16,33 @@ class Sidebar extends Component {
           <div>
             <ul className={classes.Menu}>
               <li>
-                <FaChartPie />
-                &emsp; &emsp;<span>Overview</span>
+                <NavLink
+                  to="/overview"
+                  exact
+                  activeClassName={classes.MenuActive}
+                >
+                  <FaChartPie />
+                  &emsp; &emsp;<span>Overview</span>
+                </NavLink>
               </li>
               <li>
-                <FaTicketAlt />
-                &emsp; &emsp;<span>Tickets</span>
+                <NavLink
+                  to="/tickets"
+                  exact
+                  activeClassName={classes.MenuActive}
+                >
+                  <FaTicketAlt />
+                  &emsp; &emsp;<span>Tickets</span>
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
 
+        <Switch>
+          <Route path="/overview" component={Overview} />
+          <Route path="/tickets" component={Tickets} />
+        </Switch>
         <div className={classes.User}>
           <p>Blacky</p>
           <img src={Dog} alt="User" />
