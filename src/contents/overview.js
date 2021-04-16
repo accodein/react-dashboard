@@ -1,9 +1,10 @@
 import React from "react";
+import classes from "./styles/overview.module.scss";
 
 const overview = () => {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className={classes.OverviewBody}>
+      <h1 className={classes.OverviewHeader}>Overview</h1>
     </div>
   );
 };

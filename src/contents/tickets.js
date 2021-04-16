@@ -1,9 +1,10 @@
 import React from "react";
+import classes from "./styles/tickets.module.scss";
 
 const tickets = () => {
   return (
-    <div>
-      <h1>Hello from ticket</h1>
+    <div className={classes.TicketsBody}>
+      <h1 className={classes.TicketsHeader}>Tickets</h1>
     </div>
   );
 };
