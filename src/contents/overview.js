@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 
 import classes from "./styles/overview.module.scss";
 
@@ -9,17 +9,17 @@ class Overview extends Component {
     this.state = {
       chartData: {
         labels: [
-          "Muzaffarpur",
-          "Delhi",
-          "Mumbai",
-          "Bangalore",
-          "Rajkot",
-          "Goa",
+          "Boston",
+          "Worcester",
+          "Springfield",
+          "Lowell",
+          "Cambridge",
+          "New Bedford",
         ],
         datasets: [
           {
             label: "Population",
-            date: [9999, 8888, 7777, 6666, 5555, 4444],
+            data: [9999, 8888, 7777, 7777, 8888, 9999],
             backgroundColor: [
               "rgba(255, 99, 132, 0.6)",
               "rgba(54, 162, 235, 0.6)",
@@ -34,13 +34,32 @@ class Overview extends Component {
       },
     };
   }
+
+  static defaultProps = {
+    displayTitle: true,
+    displayLegend: true,
+    legendPosition: "right",
+  };
   render() {
     return (
       <>
         <div className={classes.OverviewBody}>
           <h1 className={classes.OverviewHeader}>Overview</h1>
           <div className={classes.chart}>
-            <Bar data={this.state.chartData} options={{}} />
+            <Line
+              data={this.state.chartData}
+              options={{
+                title: {
+                  display: this.props.displayTitle,
+                  text: "testing Chart",
+                  fontSize: 25,
+                },
+                legend: {
+                  display: this.props.displayLegend,
+                  position: this.props.legendPosition,
+                },
+              }}
+            />
           </div>
         </div>
       </>
