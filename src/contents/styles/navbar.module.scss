@@ -45,39 +45,4 @@
     }
 
 }   
-
-.LoginButton {
-    position: static;
-    height: 45px;
-    width: 152px;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
-    background: none;
-    padding: 10px 10px;
-    border-radius: 85px;
-    border:1px solid #00b6f0;
-    cursor: pointer;
-    transition: all 0.2s;
-
-    &:focus {
-        outline: none;
-    }
-
-    a{
-        text-decoration: none;
-        color: #00b6f0;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-    }
-
-    &:hover {
-        background: #00b6f0;
-
-        a{
-            color: white;
-        }
-    }
-}
+ 

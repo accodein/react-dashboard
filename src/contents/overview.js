@@ -45,7 +45,7 @@ class Overview extends Component {
       <>
         <div className={classes.OverviewBody}>
           <h1 className={classes.OverviewHeader}>Overview</h1>
-          <div className={classes.chart}>
+          <div className={classes.Chart}>
             <Line
               data={this.state.chartData}
               options={{
