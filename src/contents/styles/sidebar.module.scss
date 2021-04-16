@@ -44,12 +44,20 @@
         span {
             vertical-align:5%
         }
+
+        a {
+            text-decoration: none;
+            color: #A4A6B3;
+
+            &:active,
+            &:hover,
+            &.MenuActive {
+                color: #DDE2FF; 
+            }
+        }
     }
 }
 
-.MenuActive {
-    color: #DDE2FF; 
-}
 
 .User {
     position: absolute;
