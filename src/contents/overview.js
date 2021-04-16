@@ -73,6 +73,22 @@ class Overview extends Component {
                   display: this.props.displayLegend,
                   position: this.props.legendPosition,
                 },
+                scales: {
+                  xAxes: [
+                    {
+                      gridLines: {
+                        display: false,
+                      },
+                    },
+                  ],
+                  yAxes: [
+                    {
+                      gridLines: {
+                        display: false,
+                      },
+                    },
+                  ],
+                },
               }}
             />
           </div>
