@@ -60,7 +60,8 @@ class Overview extends Component {
       <>
         <div className={classes.OverviewBody}>
           <h1 className={classes.OverviewHeader}>Overview</h1>
-          <div className={classes.Chart}>
+          <div></div>
+          {/* <div className={classes.Chart}>
             <Line
               data={this.state.chartData}
               options={{
@@ -72,6 +73,7 @@ class Overview extends Component {
                 legend: {
                   display: this.props.displayLegend,
                   position: this.props.legendPosition,
+                  align: "start",
                 },
                 scales: {
                   xAxes: [
@@ -84,14 +86,14 @@ class Overview extends Component {
                   yAxes: [
                     {
                       gridLines: {
-                        display: false,
+                        display: true,
                       },
                     },
                   ],
                 },
               }}
             />
-          </div>
+          </div> */}
         </div>
       </>
     );
