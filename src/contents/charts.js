@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Bar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import classes from "./styles/charts.module.scss";
 
 class Chart extends Component {
@@ -62,7 +62,7 @@ class Chart extends Component {
       <>
         <div className={classes.Container}>
           <div className={classes.Chart}>
-            <Bar
+            <Doughnut
               data={this.state.chartData}
               options={{
                 title: {
