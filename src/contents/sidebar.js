@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import { Route, Switch, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import classes from "./styles/sidebar.module.scss";
 import Dog from "../assets/labrador.jpg";
 import { FaChartPie, FaTicketAlt } from "react-icons/fa";
-// import RightView from "./rightView";
-// import Overview from "./overview";
-// import Tickets from "./tickets";
 
 class Sidebar extends Component {
   render() {
@@ -43,11 +40,6 @@ class Sidebar extends Component {
           <p>Blacky</p>
           <img src={Dog} alt="User" />
         </div>
-        {/* <RightView /> */}
-        {/* <Switch>
-          <Route path="/overview" component={Overview} />
-          <Route path="/tickets" component={Tickets} />
-        </Switch> */}
       </div>
     );
   }

@@ -1,4 +1,4 @@
-.SectionHeader {
+.SectionTitle {
     position: absolute;
     padding-left: 25px;
     margin-top: 41px;
@@ -10,11 +10,12 @@
     color: #252733;
 }
 
-.SectionTitle {
+.SectionHeader {
     display: flex;
+    width: 80%;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .SectionIcons {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import classes from "./styles/charts.module.scss";
 
 class Chart extends Component {
@@ -62,13 +62,14 @@ class Chart extends Component {
       <>
         <div className={classes.Container}>
           <div className={classes.Chart}>
-            <Line
+            <Bar
               data={this.state.chartData}
               options={{
                 title: {
                   display: this.props.displayTitle,
                   text: "testing Chart",
                   fontSize: 25,
+                  fontColor: "black",
                 },
                 legend: {
                   display: this.props.displayLegend,
@@ -76,13 +77,6 @@ class Chart extends Component {
                 },
               }}
             />
-          </div>
-          <div className={classes.ChartDescription}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
         </div>
       </>

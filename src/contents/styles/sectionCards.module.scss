@@ -10,6 +10,13 @@
     box-sizing: border-box;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
+    margin-bottom: 25px;
+
+    &.Active,
+    &:hover,
+    &:active {
+        border: 1px solid #3751FF;
+    }
 }
 
 .Legend {
