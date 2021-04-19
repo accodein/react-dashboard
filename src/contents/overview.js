@@ -10,7 +10,12 @@ const overview = (props) => {
     <>
       <div className={classes.OverviewBody}>
         <SectionNavbar>Overview</SectionNavbar>
-        <SectionCards />
+        <div>
+          <SectionCards issue="Unresolved" count="60" />
+          <SectionCards issue="Overdue" count="16" />
+          <SectionCards issue="Open" count="63" />
+          <SectionCards issue="On hold" count="84" />
+        </div>
         <Chart />
       </div>
     </>
