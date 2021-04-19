@@ -4,10 +4,8 @@ import classes from "./styles/sectionCards.module.scss";
 const cards = (props) => {
   return (
     <div className={classes.SectionCards}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>{props.issue}</div>
+      <div>{props.count}</div>
     </div>
   );
 };

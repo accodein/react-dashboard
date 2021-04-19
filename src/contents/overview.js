@@ -64,12 +64,7 @@ class Overview extends Component {
       <>
         <div className={classes.OverviewBody}>
           <SectionNavbar>Overview</SectionNavbar>
-          <div className={classes.OverviewCards}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+
           <div className={classes.Chart}>
             <Line
               data={this.state.chartData}
