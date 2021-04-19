@@ -16,6 +16,11 @@
     &:hover,
     &:active {
         border: 1px solid #3751FF;
+        
+        .Legend,
+        .Count {
+            color: #3751FF;
+        }
     }
 }
 
