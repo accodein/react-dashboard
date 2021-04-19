@@ -1,11 +1,10 @@
 .OverviewBody {
-position: relative;
-width: 1185px;
-margin-left: 255px;
+    width: 100%;
+    position: relative;
 }
 
 .OverviewCards {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

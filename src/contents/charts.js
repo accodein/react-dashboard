@@ -60,21 +60,30 @@ class Chart extends Component {
   render() {
     return (
       <>
-        <div className={classes.Chart}>
-          <Line
-            data={this.state.chartData}
-            options={{
-              title: {
-                display: this.props.displayTitle,
-                text: "testing Chart",
-                fontSize: 25,
-              },
-              legend: {
-                display: this.props.displayLegend,
-                position: this.props.legendPosition,
-              },
-            }}
-          />
+        <div className={classes.Container}>
+          <div className={classes.Chart}>
+            <Line
+              data={this.state.chartData}
+              options={{
+                title: {
+                  display: this.props.displayTitle,
+                  text: "testing Chart",
+                  fontSize: 25,
+                },
+                legend: {
+                  display: this.props.displayLegend,
+                  position: this.props.legendPosition,
+                },
+              }}
+            />
+          </div>
+          <div className={classes.ChartDescription}>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </>
     );
