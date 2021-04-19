@@ -7,7 +7,7 @@ const sectionNavbar = (props) => {
   return (
     <div className={classes.SectionTitle}>
       <div>
-        <h1 className={classes.SecitionHeader}>{props.children}</h1>
+        <h1 className={classes.SectionHeader}>{props.children}</h1>
       </div>
       <div className={classes.SectionIcons}>
         <div className={classes.SearchIcon}>
