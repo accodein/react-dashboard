@@ -13,10 +13,10 @@ const sectionNavbar = (props) => {
         <div className={classes.SearchIcon}>
           <BsSearch />
         </div>
-        <div>
+        <div className={classes.NotificationIcon}>
           <IoIosNotifications />
         </div>
-        <div>|</div>
+        <div>&#8739;</div>
       </div>
     </div>
   );
