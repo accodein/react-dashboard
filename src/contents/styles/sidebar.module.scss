@@ -15,7 +15,7 @@
 
 .Logo {
     display: flex;
-    align-items: center;
+    align-items: left;
     padding-left: 25px;
     margin-top: 41px;
     margin-bottom: 63px;
@@ -40,9 +40,11 @@
 }
 
 .Menu {
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     text-align: left;
     font-weight: normal;
     line-height: 40px;
