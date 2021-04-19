@@ -4,6 +4,7 @@ import { Line } from "react-chartjs-2";
 import classes from "./styles/overview.module.scss";
 import { BsSearch } from "react-icons/bs";
 import { IoIosNotifications } from "react-icons/io";
+import SectionNavbar from "./sectionNavbar";
 
 class Overview extends Component {
   constructor(props) {
@@ -64,20 +65,7 @@ class Overview extends Component {
     return (
       <>
         <div className={classes.OverviewBody}>
-          <div className={classes.Overview_Title}>
-            <div>
-              <h1 className={classes.OverviewHeader}>Overview</h1>
-            </div>
-            <div className={classes.OverviewIcons}>
-              <div>
-                <BsSearch />
-              </div>
-              <div>
-                <IoIosNotifications />
-              </div>
-              <div>|</div>
-            </div>
-          </div>
+          <SectionNavbar>Overview</SectionNavbar>
           <div className={classes.Chart}>
             <Line
               data={this.state.chartData}
