@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 
 import classes from "./styles/overview.module.scss";
-import { BsSearch } from "react-icons/bs";
-import { IoIosNotifications } from "react-icons/io";
 import SectionNavbar from "./sectionNavbar";
 
 class Overview extends Component {
