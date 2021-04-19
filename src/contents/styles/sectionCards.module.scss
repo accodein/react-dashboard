@@ -1,0 +1,32 @@
+.SectionCards {
+    margin-top: 64px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 258px;
+    height: 134px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+
+.Legend {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;    
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #9FA2B4;
+    
+}
+
+.Count {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #252733;
+}

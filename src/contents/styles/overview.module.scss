@@ -4,10 +4,9 @@ width: 1185px;
 margin-left: 255px;
 }
 
-
-.Chart {
-    position: absolute;
-    width: 70vw;
-    height: auto;
-    top: 150px;
+.OverviewCards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
