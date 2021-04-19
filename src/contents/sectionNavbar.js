@@ -5,11 +5,11 @@ import { IoIosNotifications } from "react-icons/io";
 
 const sectionNavbar = (props) => {
   return (
-    <div className={classes.Overview_Title}>
+    <div className={classes.SectionTitle}>
       <div>
-        <h1 className={classes.OverviewHeader}>{props.children}</h1>
+        <h1 className={classes.SecitionHeader}>{props.children}</h1>
       </div>
-      <div className={classes.OverviewIcons}>
+      <div className={classes.SectionIcons}>
         <div>
           <BsSearch />
         </div>
