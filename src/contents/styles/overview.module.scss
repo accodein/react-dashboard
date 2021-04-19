@@ -16,9 +16,23 @@ margin-left: 255px;
     color: #252733;
 }
 
+.Overview_Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.OverviewIcons {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 .Chart {
     position: absolute;
-    width: 1000px;
-    height: 500px;
+    width: 70vw;
+    height: auto;
     top: 150px;
 }

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 
 import classes from "./styles/overview.module.scss";
+import { BsSearch } from "react-icons/bs";
+import { IoIosNotifications } from "react-icons/io";
 
 class Overview extends Component {
   constructor(props) {
@@ -30,6 +32,7 @@ class Overview extends Component {
               "rgba(255, 99, 132, 0.6)",
             ],
             fill: false,
+            pointRadius: 0,
           },
           {
             label: "Control",
@@ -44,6 +47,7 @@ class Overview extends Component {
               "rgba(255, 99, 132, 0.6)",
             ],
             fill: false,
+            pointRadius: 0,
           },
         ],
       },
@@ -55,13 +59,26 @@ class Overview extends Component {
     displayLegend: true,
     legendPosition: "right",
   };
+
   render() {
     return (
       <>
         <div className={classes.OverviewBody}>
-          <h1 className={classes.OverviewHeader}>Overview</h1>
-          <div></div>
-          {/* <div className={classes.Chart}>
+          <div className={classes.Overview_Title}>
+            <div>
+              <h1 className={classes.OverviewHeader}>Overview</h1>
+            </div>
+            <div className={classes.OverviewIcons}>
+              <div>
+                <BsSearch />
+              </div>
+              <div>
+                <IoIosNotifications />
+              </div>
+              <div>|</div>
+            </div>
+          </div>
+          <div className={classes.Chart}>
             <Line
               data={this.state.chartData}
               options={{
@@ -73,27 +90,10 @@ class Overview extends Component {
                 legend: {
                   display: this.props.displayLegend,
                   position: this.props.legendPosition,
-                  align: "start",
-                },
-                scales: {
-                  xAxes: [
-                    {
-                      gridLines: {
-                        display: false,
-                      },
-                    },
-                  ],
-                  yAxes: [
-                    {
-                      gridLines: {
-                        display: true,
-                      },
-                    },
-                  ],
                 },
               }}
             />
-          </div> */}
+          </div>
         </div>
       </>
     );
