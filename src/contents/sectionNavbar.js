@@ -10,7 +10,7 @@ const sectionNavbar = (props) => {
         <h1 className={classes.SecitionHeader}>{props.children}</h1>
       </div>
       <div className={classes.SectionIcons}>
-        <div>
+        <div className={classes.SearchIcon}>
           <BsSearch />
         </div>
         <div>
