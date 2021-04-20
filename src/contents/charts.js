@@ -93,6 +93,28 @@ class Chart extends Component {
               }}
             />
           </div>
+          <div>
+            <div>
+              <p>Resolved</p>
+              <h1>449</h1>
+            </div>
+            <div>
+              <p>Resolved</p>
+              <h1>449</h1>
+            </div>
+            <div>
+              <p>Resolved</p>
+              <h1>449</h1>
+            </div>
+            <div>
+              <p>Resolved</p>
+              <h1>449</h1>
+            </div>
+            <div>
+              <p>Resolved</p>
+              <h1>449</h1>
+            </div>
+          </div>
         </div>
       </>
     );
