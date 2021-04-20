@@ -72,47 +72,49 @@ class Chart extends Component {
                 as of {new Date().toLocaleString("en-UG", options)}
               </p>
             </div>
-            <Line
-              id="canvas"
-              data={this.state.chartData}
-              options={{
-                legend: {
-                  display: this.props.displayLegend,
-                  position: this.props.legendPosition,
-                  align: "end",
-                },
-                scales: {
-                  xAxes: [
-                    {
-                      gridLines: {
-                        display: false,
+            <div className={classes.Graph}>
+              <Line
+                id="canvas"
+                data={this.state.chartData}
+                options={{
+                  legend: {
+                    display: this.props.displayLegend,
+                    position: this.props.legendPosition,
+                    align: "end",
+                  },
+                  scales: {
+                    xAxes: [
+                      {
+                        gridLines: {
+                          display: false,
+                        },
                       },
-                    },
-                  ],
-                },
-              }}
-            />
+                    ],
+                  },
+                }}
+              />
+            </div>
           </div>
-          <div>
+          <div className={classes.ChartAdditionalInfo}>
             <div>
               <p>Resolved</p>
               <h1>449</h1>
             </div>
             <div>
-              <p>Resolved</p>
-              <h1>449</h1>
+              <p>Received</p>
+              <h1>426</h1>
             </div>
             <div>
-              <p>Resolved</p>
-              <h1>449</h1>
+              <p>Average first response time</p>
+              <h1>33m</h1>
             </div>
             <div>
-              <p>Resolved</p>
-              <h1>449</h1>
+              <p>Average response time</p>
+              <h1>3h 43m</h1>
             </div>
             <div>
-              <p>Resolved</p>
-              <h1>449</h1>
+              <p>Resolution within SLA</p>
+              <h1>94%</h1>
             </div>
           </div>
         </div>
