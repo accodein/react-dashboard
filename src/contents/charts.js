@@ -118,6 +118,12 @@ class Chart extends Component {
             </div>
           </div>
         </div>
+        <div className={classes.Card}>
+          <div
+            className={`${classes.ChartCard} ${classes.UnresolvedTicket}`}
+          ></div>
+          <div className={`${classes.ChartCard} ${classes.Tasks}`}></div>
+        </div>
       </>
     );
   }
