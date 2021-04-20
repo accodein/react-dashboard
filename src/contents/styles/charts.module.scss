@@ -9,8 +9,37 @@
 
 .Chart {
     position: absolute;
-    width: 656px;
+    width: 686px;
     height: auto;
     top: 300px;
+}
+
+.TitleContainer {
+    margin-left: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+}
+.Title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    color: #252733;
+}
+
+.SubTitle {
+    margin: 0;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+    color: #9FA2B4;
 }
 

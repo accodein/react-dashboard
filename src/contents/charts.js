@@ -54,20 +54,28 @@ class Chart extends Component {
   };
 
   render() {
+    let options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    };
     return (
       <>
         <div className={classes.Container}>
           <div className={classes.Chart}>
+            <div className={classes.TitleContainer}>
+              <h1 className={classes.Title}>Today's trend</h1>
+              <p className={classes.SubTitle}>
+                as of {new Date().toLocaleString("en-UG", options)}
+              </p>
+            </div>
             <Line
               id="canvas"
               data={this.state.chartData}
               options={{
-                title: {
-                  display: this.props.displayTitle,
-                  text: "testing Chart",
-                  fontSize: 25,
-                  fontColor: "black",
-                },
                 legend: {
                   display: this.props.displayLegend,
                   position: this.props.legendPosition,
