@@ -1,7 +1,9 @@
 .RightView {
     position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: calc(100% - 255px);
     height: 100vh;
+    overflow-y: auto;
 }
