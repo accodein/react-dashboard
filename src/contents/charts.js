@@ -128,7 +128,25 @@ class Chart extends Component {
                 </p>
               </div>
               <div>
-                <a href="/overview">View Details</a>
+                <a href="#overview">View Details</a>
+              </div>
+            </div>
+            <div className={classes.TicketBrief}>
+              <div>
+                <h1>Mani</h1>
+                <p>26</p>
+              </div>
+              <div>
+                <h1>Mani</h1>
+                <p>26</p>
+              </div>
+              <div>
+                <h1>Mani</h1>
+                <p>26</p>
+              </div>
+              <div>
+                <h1>Mani</h1>
+                <p>26</p>
               </div>
             </div>
           </div>

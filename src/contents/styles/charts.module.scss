@@ -156,3 +156,16 @@
     }
 }
 
+.TicketBrief {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    & div {
+        display: flex;
+        width: 546px;
+        height: 58px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
