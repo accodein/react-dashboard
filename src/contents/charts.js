@@ -82,6 +82,9 @@ class Chart extends Component {
                     position: this.props.legendPosition,
                     align: "end",
                   },
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  responsiveAnimationDuration: 0,
                   scales: {
                     xAxes: [
                       {
