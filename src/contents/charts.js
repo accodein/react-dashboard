@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 import classes from "./styles/charts.module.scss";
+import Button from "./button";
+import { GoPlus } from "react-icons/go";
 
 class Chart extends Component {
   constructor(props) {
@@ -136,24 +138,63 @@ class Chart extends Component {
             </div>
             <div className={classes.TicketBrief}>
               <div>
-                <h1>Mani</h1>
-                <p>26</p>
+                <h1>Waiting on Feature Request</h1>
+                <p>4238</p>
               </div>
               <div>
-                <h1>Mani</h1>
-                <p>26</p>
+                <h1>Awaiting Customer Response</h1>
+                <p>1005</p>
               </div>
               <div>
-                <h1>Mani</h1>
-                <p>26</p>
+                <h1>Awaiting Developer Fix</h1>
+                <p>914</p>
               </div>
               <div>
-                <h1>Mani</h1>
-                <p>26</p>
+                <h1>Pending</h1>
+                <p>281</p>
               </div>
             </div>
           </div>
-          <div className={`${classes.ChartCard} ${classes.Tasks}`}></div>
+          <div className={`${classes.ChartCard} ${classes.UnresolvedTicket}`}>
+            <div className={classes.ChartCardHeader}>
+              <div>
+                <h1>Tasks</h1>
+                <p>Today</p>
+              </div>
+              <div>
+                <a href="#overview">View all</a>
+              </div>
+            </div>
+            <div className={classes.TicketBrief}>
+              <div>
+                <input type="text" placeholder="Create new task" />
+                <Button btnType="Plus">
+                  <GoPlus />
+                </Button>
+              </div>
+              <div>
+                <h1>
+                  <input type="checkbox" />
+                  Finish ticket update
+                </h1>
+                <Button btnType="Urgent">Urgent</Button>
+              </div>
+              <div>
+                <h1>
+                  <input type="checkbox" />
+                  Finish ticket update
+                </h1>
+                <Button btnType="New">New</Button>
+              </div>
+              <div>
+                <h1>
+                  <input type="checkbox" />
+                  Finish ticket update
+                </h1>
+                <Button btnType="Default">Default</Button>
+              </div>
+            </div>
+          </div>
         </div>
       </>
     );
