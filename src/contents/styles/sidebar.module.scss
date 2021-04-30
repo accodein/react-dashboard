@@ -26,6 +26,7 @@
     letter-spacing: 0.4px;
     font-weight: bold;
     opacity: 0.7;
+    visibility: hidden;
 
     a {
         text-decoration: none;
@@ -55,7 +56,7 @@
         list-style: none;
 
         span {
-            vertical-align:5%
+            vertical-align:5%;
         }
 
         a {
@@ -72,30 +73,26 @@
 }
 
 
-.User {
-    position: absolute;
-    position: fixed;
-    right: 0;
-    padding-right: 25px;
-    display: flex;
-    flex-direction: row;
 
-    img {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        margin-top: 41px;
-        border: 2px solid #C4C4C4
-        ;
+
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .Responsive {
+        li {
+            span {
+                display: none;
+            }
+        }
+        .Logo {
+            visibility: hidden;
+        }
+        .Sidebar {
+            width: 100px;
+        }
     }
 
-    p{
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 55px;
-        margin-right: 10px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        color: #252733;
-    }
 }

@@ -1,33 +1,21 @@
 import classes from "./styles/navbar.module.scss";
 import React from "react";
 
+import Dog from "../assets/labrador.jpg";
+
 class Navbar extends React.Component {
   render() {
-    let navMenu = (
-      <div className={classes.NavMenu}>
-        <div>
-          <a href="/">Home</a>
-        </div>
-        <div>
-          <a href="/">Dashboard</a>
-        </div>
-      </div>
-    );
     return (
       <>
         <header>
           <nav>
             <div className={classes.Nav}>
-              <div className={classes.Logo}>Accode</div>
-              <div>
-                <div className={classes.Desktop}>
-                  <ul>{navMenu}</ul>
-                </div>
+              <div className={classes.Logo}>
+                <h1>Accode Dashboard</h1>
               </div>
-              <div>
-                <button className={classes.LoginButton}>
-                  <a href="/">Login</a>
-                </button>
+              <div className={classes.User}>
+                <p>Blacky</p>
+                <img src={Dog} alt="User" />
               </div>
             </div>
           </nav>

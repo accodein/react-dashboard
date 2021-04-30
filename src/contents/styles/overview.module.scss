@@ -9,3 +9,21 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .OverviewBody {
+        width: 120%;
+    }
+
+    .OverviewCards {
+        margin-left: 30px;
+        margin-right: -30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+}

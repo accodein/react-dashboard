@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "./styles/sidebar.module.scss";
-import Dog from "../assets/labrador.jpg";
 import { FaChartPie, FaTicketAlt } from "react-icons/fa";
 
 class Sidebar extends Component {
   render() {
     return (
-      <div className={classes.MainSidebar}>
+      <div className={`${classes.MainSidebar} ${classes.Responsive}`}>
         <div className={classes.Sidebar}>
           <div className={classes.Logo}>Accode Dashboard</div>
           <div>
@@ -35,10 +34,6 @@ class Sidebar extends Component {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={classes.User}>
-          <p>Blacky</p>
-          <img src={Dog} alt="User" />
         </div>
       </div>
     );
