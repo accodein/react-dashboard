@@ -1,5 +1,7 @@
 import "./App.css";
+
 // import Navbar from "./contents/navbar";
+
 import Sidebar from "./contents/sidebar";
 import RightView from "./contents/rightView";
 
