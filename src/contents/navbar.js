@@ -11,7 +11,7 @@ class Navbar extends React.Component {
           <nav>
             <div className={classes.Nav}>
               <div className={classes.Logo}>
-                <h1>Accode Dashboard</h1>
+                <h1>Dashboard</h1>
               </div>
               <div className={classes.User}>
                 <p>Blacky</p>

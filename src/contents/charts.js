@@ -37,7 +37,7 @@ class Chart extends Component {
         },
         {
           label: "Control",
-          data: [3111, 8888, 2222, 7777, 3333, 9999],
+          data: [3111, 8888, 2222, 7777, 3333, 6999],
           fill: true,
           backgroundColor: gradient,
           pointRadius: 0,

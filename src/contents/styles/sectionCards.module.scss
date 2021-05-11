@@ -1,6 +1,6 @@
 .SectionCards {
     margin-top: 64px;
-    // margin-left: 60px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,3 +42,12 @@
     letter-spacing: 1px;
     color: #252733;
 }
+
+
+// @media only screen 
+//   and (min-device-width: 1366px) 
+//   and (max-device-width: 1024px) 
+//   and (-webkit-min-device-pixel-ratio: 1) {
+   
+
+// }
