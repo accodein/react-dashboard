@@ -1,0 +1,25 @@
+.RightView {
+    position: relative;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 255px);
+    height: 100vh;
+    overflow:auto;
+    margin-top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .RightView {
+        width: calc(100% - 100px);
+    }
+
+}

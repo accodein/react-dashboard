@@ -1,0 +1,31 @@
+.SectionTitle {
+    position: absolute;
+    padding-left: 25px;
+    margin-top: 41px;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    color: #252733;
+}
+
+.SectionHeader {
+    display: flex;
+    width: 86%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+.SectionIcons {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: #C5C7CD;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+ 

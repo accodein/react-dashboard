@@ -1,0 +1,156 @@
+.MainSidebar {
+    position: relative;
+    height:100vh;
+}
+
+.Sidebar{
+    position: fixed;
+    left: 0;
+    width: 255px;
+    height: 100%;
+    color: #A4A6B3;
+    background: #363740;
+}
+
+.Logo {
+    display: flex;
+    align-items: left;
+    padding-left: 25px;
+    margin-top: 41px;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    opacity: 0.7;
+    visibility: hidden;
+
+    a {
+        text-decoration: none;
+        color: #A4A6B3;
+
+        &:active,
+        &:hover,
+        &.MenuActive {
+            color: #DDE2FF; 
+        }
+    }
+}
+
+.Menu {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+
+    li{
+        list-style: none;
+
+        span {
+            vertical-align:5%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #A4A6B3;
+
+            &:active,
+            &:hover,
+            &.MenuActive {
+                color: #DDE2FF; 
+            }
+        }
+    }
+}
+
+
+// @media only screen 
+//   and (min-device-width: 768px) 
+//   and (max-device-width: 1024px)
+//   and (-webkit-min-device-pixel-ratio: 1) {
+//     .Responsive {
+//         li {
+//             span {
+//                 display: none;
+//             }
+//         }
+//         .Logo {
+//             visibility: hidden;
+//         }
+//         .Sidebar {
+//             width: 100px;
+//         }
+//     }
+
+// }
+
+@media all and (device-width: 1024px) and (device-height: 1366px)  and (orientation:portrait) {
+    .Responsive {
+        li {
+            span {
+                display: none;
+            }
+        }
+        .Logo {
+            visibility: hidden;
+        }
+        .Sidebar {
+            width: 100px;
+        }
+    }
+  }
+  @media all and (device-width: 1366px) and (device-height: 1024px)  and (orientation:landscape) {
+    .Responsive {
+        li {
+            span {
+                display: none;
+            }
+        }
+        .Logo {
+            visibility: hidden;
+        }
+        .Sidebar {
+            width: 100px;
+        }
+    }
+  }
+
+  @media all and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait) {
+    .Responsive {
+        li {
+            span {
+                display: none;
+            }
+        }
+        .Logo {
+            visibility: hidden;
+        }
+        .Sidebar {
+            width: 100px;
+        }
+    }
+  }
+
+  @media all and (device-width: 1024px) and (device-height: 768px)  and (orientation:landscape) {
+    .Responsive {
+        li {
+            span {
+                display: none;
+            }
+        }
+        .Logo {
+            visibility: hidden;
+        }
+        .Sidebar {
+            width: 100px;
+        }
+    }
+  }

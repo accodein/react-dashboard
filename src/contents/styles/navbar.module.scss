@@ -1,0 +1,44 @@
+
+.Nav {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 2000px;
+    height: 50px;
+    background: #363740;
+}
+
+.Logo {
+  color:  #DDE2FF;
+  margin-top: -8px;
+  margin-left: 30px;
+}
+
+.User {
+    margin-top: 4px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #C4C4C4;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #DDE2FF;
+    }
+}
+   
+ 
